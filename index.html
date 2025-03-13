@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ND Advanced | Анализ закономерностей</title>
+    <title>ND Advanced | Аналитика закономерностей</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -42,6 +42,13 @@
         p, li {
             font-size: 0.9em;
         }
+        ul.services-list {
+            list-style: none;
+            padding: 0;
+        }
+        ul.services-list li {
+            padding: 10px 0;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -65,6 +72,20 @@
         }
         details[open] summary {
             border-bottom: 1px solid #fff;
+        }
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .lang-switch:hover {
+            background: #ccc;
         }
         a.telegram-btn {
             display: inline-block;
@@ -91,64 +112,126 @@
         }
     </style>
 </head>
-<body>
+<body data-lang="ru">
+    <button class="lang-switch" onclick="switchLang()">EN</button>
+
     <header>
         <div class="container">
             <h1>ND Advanced</h1>
-            <p>Аналитика закономерностей. Без мистики.</p>
+            <p class="ru">Аналитика закономерностей. Физмат прогнозирование</p>
+            <p class="en" style="display:none;">Pattern Analytics. Physical-Math Forecasting</p>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>О проекте</h2>
-            <p>ND Advanced — инструмент для анализа и прогнозирования. Основа — математические модели и китайские первоисточники. Никакой эзотерики. Задавайте вопросы, получайте структурированные ответы.</p>
+            <h2 class="ru">О проекте</h2>
+            <h2 class="en" style="display:none;">About</h2>
+            <p class="ru">ND Advanced — инструмент для анализа и прогнозирования. Основа — математические модели и вычислительный анализ. Задавайте вопросы, получайте структурированные ответы.</p>
+            <p class="en" style="display:none;">ND Advanced is a tool for analysis and forecasting. Based on mathematical models and computational analysis. Ask questions, get structured answers.</p>
         </div>
     </section>
 
-    <section id="advantages">
+    <section id="comparison">
         <div class="container">
-            <h2>Почему мы</h2>
+            <h2 class="ru">Сравнительная таблица</h2>
+            <h2 class="en" style="display:none;">Comparison Table</h2>
             <table>
-                <tr><th>Фактор</th><th>ND Advanced</th><th>Конкуренты</th></tr>
-                <tr><td>Методология</td><td>Первоисточники, алгоритмы</td><td>Интуиция "экспертов"</td></tr>
-                <tr><td>Архитектура</td><td>Открытая</td><td>Субъективная</td></tr>
-                <tr><td>Формат</td><td>Детали и логика</td><td>Общие фразы</td></tr>
-                <tr><td>Достоверность</td><td>Математика</td><td>Человеческий фактор</td></tr>
+                <tr>
+                    <th class="ru">Фактор</th>
+                    <th class="en" style="display:none;">Factor</th>
+                    <th>ND Advanced</th>
+                    <th class="ru">Сторонние сервисы</th>
+                    <th class="en" style="display:none;">Other Services</th>
+                </tr>
+                <tr>
+                    <td class="ru">Методология</td>
+                    <td class="en" style="display:none;">Methodology</td>
+                    <td class="ru">Первоисточники, алгоритмы</td>
+                    <td class="en" style="display:none;">Primary sources, algorithms</td>
+                    <td class="ru">Интуитивные интерпретации «экспертов»</td>
+                    <td class="en" style="display:none;">Intuitive interpretations by "experts"</td>
+                </tr>
+                <tr>
+                    <td class="ru">Архитектура</td>
+                    <td class="en" style="display:none;">Architecture</td>
+                    <td class="ru">Открытая</td>
+                    <td class="en" style="display:none;">Open</td>
+                    <td class="ru">Закрытая, субъективная</td>
+                    <td class="en" style="display:none;">Closed, subjective</td>
+                </tr>
+                <tr>
+                    <td class="ru">Формат</td>
+                    <td class="en" style="display:none;">Format</td>
+                    <td class="ru">Ответ с логикой и деталями</td>
+                    <td class="en" style="display:none;">Response with logic and details</td>
+                    <td class="ru">Общие, расплывчатые фразы</td>
+                    <td class="en" style="display:none;">Generic, vague phrases</td>
+                </tr>
+                <tr>
+                    <td class="ru">Достоверность</td>
+                    <td class="en" style="display:none;">Reliability</td>
+                    <td class="ru">Математика</td>
+                    <td class="en" style="display:none;">Mathematics</td>
+                    <td class="ru">Человеческий фактор</td>
+                    <td class="en" style="display:none;">Human factor</td>
+                </tr>
             </table>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>Услуги</h2>
-            <p>Анализ одного вопроса — 5000 ₽<br>Глубокий разбор — 10,000-15,000 ₽<br>VIP-консультация — до 1,000,000 ₽</p>
+            <h2 class="ru">Услуги</h2>
+            <h2 class="en" style="display:none;">Services</h2>
+            <ul class="services-list">
+                <li class="ru">Точечный разбор (5.000-10.000 ₽) — анализ одного вопроса или ситуации с отчётом.</li>
+                <li class="en" style="display:none;">Spot Analysis (5,000-10,000 ₽) — analysis of one question or situation with a report.</li>
+                <li class="ru">Глубокий прогноз (10.000-20.000 ₽) — детальный анализ личности или периода с рекомендациями.</li>
+                <li class="en" style="display:none;">Deep Forecast (10,000-20,000 ₽) — detailed analysis of personality or period with recommendations.</li>
+                <li class="ru">Персональный анализ (50,000 ₽) — анализ партнёрства или подбора команды для бизнеса.</li>
+                <li class="en" style="display:none;">Personal Analysis (50,000 ₽) — analysis of partnership or team selection for business.</li>
+                <li class="ru">Стратегический план (от 200,000 ₽) — долгосрочный прогноз и персональная стратегия.</li>
+                <li class="en" style="display:none;">Strategic Plan (from 200,000 ₽) — long-term forecast and personal strategy.</li>
+            </ul>
         </div>
     </section>
 
     <section id="methodology">
         <div class="container">
-            <h2>Методология</h2>
+            <h2 class="ru">Методология</h2>
+            <h2 class="en" style="display:none;">Methodology</h2>
             <details>
-                <summary>Как это работает?</summary>
-                <p>Собираем данные (дата рождения, запрос). Анализируем через алгоритмы на основе Ба Цзы и других систем. Выдаём результат с объяснением.</p>
+                <summary class="ru">Как это работает?</summary>
+                <summary class="en" style="display:none;">How It Works?</summary>
+                <p class="ru">Собираем данные, анализируем через алгоритмы, выдаём результат с пояснениями.</p>
+                <p class="en" style="display:none;">We collect data, analyze via algorithms, and provide results with explanations.</p>
             </details>
             <details>
-                <summary>Источник данных</summary>
-                <p>Редкие китайские тексты, проверенные 3000-летней практикой.</p>
+                <summary class="ru">Источник данных</summary>
+                <summary class="en" style="display:none;">Data Source</summary>
+                <p class="ru">Редкие китайские тексты, проверенные 3000-летней практикой.</p>
+                <p class="en" style="display:none;">Rare Chinese texts, proven by 3000 years of practice.</p>
             </details>
             <details>
-                <summary>Точность</summary>
-                <p>Машинный расчёт исключает ошибки человека. Точность зависит от ваших вводных.</p>
+                <summary class="ru">Точность</summary>
+                <summary class="en" style="display:none;">Accuracy</summary>
+                <p class="ru">Машинный расчёт исключает ошибки человека. Точность зависит от ваших вводных.</p>
+                <p class="en" style="display:none;">Machine calculation eliminates human error. Accuracy depends on your input.</p>
             </details>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Запрос</h2>
-            <p>Пишите в Telegram для консультации.</p>
-            <a href="https://t.me/yourusername" class="telegram-btn" target="_blank">Связаться в Telegram</a>
+            <h2 class="ru">Запрос</h2>
+            <h2 class="en" style="display:none;">Request</h2>
+            <p class="ru">Пишите в Telegram для консультации. Отчёт — приватная ссылка в Notion.</p>
+            <p class="en" style="display:none;">Contact via Telegram for consultation. Report — private link in Notion.</p>
+            <a href="https://t.me/yourusername" class="telegram-btn" target="_blank">
+                <span class="ru">Связаться</span>
+                <span class="en" style="display:none;">Contact</span>
+            </a>
         </div>
     </section>
 
@@ -157,5 +240,23 @@
             <p>ND Advanced | 2025</p>
         </div>
     </footer>
+
+    <script>
+        function switchLang() {
+            const body = document.body;
+            const currentLang = body.getAttribute('data-lang');
+            if (currentLang === 'ru') {
+                body.setAttribute('data-lang', 'en');
+                document.querySelectorAll('.ru').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
+                document.querySelector('.lang-switch').textContent = 'RU';
+            } else {
+                body.setAttribute('data-lang', 'ru');
+                document.querySelectorAll('.ru').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+                document.querySelector('.lang-switch').textContent = 'EN';
+            }
+        }
+    </script>
 </body>
 </html>
