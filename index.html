@@ -39,6 +39,9 @@
             border-bottom: 1px dashed #fff;
             padding-bottom: 5px;
         }
+        h2.target-audience {
+            margin-top: 20px; /* Отступ сверху для заголовка "Разработка и ответственность" */
+        }
         p {
             font-size: 0.9em;
         }
@@ -74,6 +77,13 @@
         }
         details[open] summary {
             border-bottom: 1px solid #fff;
+        }
+        .source-details {
+            margin-left: 20px; /* Отступ для содержимого */
+        }
+        .source-details .label {
+            font-weight: bold; /* Выделение заголовков */
+            margin-right: 5px;
         }
         .lang-switch {
             position: fixed;
@@ -140,6 +150,25 @@
             <h2 class="en" style="display:none;">About</h2>
             <p class="ru">ND Advanced — инструмент для анализа и прогнозирования. Основа — математические модели и вычислительный анализ. Задавайте вопросы, получайте структурированные ответы.</p>
             <p class="en" style="display:none;">ND Advanced is a tool for analysis and forecasting. Built on mathematical models and computational methods. Ask questions, receive structured insights.</p>
+            <h2 class="ru target-audience">Разработка и ответственность</h2>
+            <h2 class="en target-audience" style="display:none;">Development and Responsibility</h2>
+            <p class="ru">Сервис разработан D.A.. Главная задача, которую я ставил перед собой - создание внятного инструмента прогнозирования на основе математических вычислений. Без фатумов, гадалок и прочей "шелухи".<br>
+            Инструмент оказался на удивление точным, поэтому, запускаю его в работу. (Сам я пришел к данной теме через связь дыхательных практик Цигун и китайской метафизики)<br>
+            За основу специально взята именно Восточная школа, так как она точнее распространенной Западной и трактуется более однозначно. Как компьютерный код</p>
+            <p class="en" style="display:none;">The service is developed by D.A.. My main goal was to create a clear forecasting tool based on mathematical calculations. Without fates, fortune-tellers, or other "fluff".<br>
+            The tool turned out surprisingly accurate, so, I’m launching it into operation. (I came to this topic through the connection between Qigong breathing practices and Chinese metaphysics)<br>
+            The Eastern school was deliberately chosen as the foundation, as it is more accurate than the widespread Western approach and is interpreted more unequivocally. Like computer code.</p>
+            <h2 class="ru">Этика</h2>
+            <h2 class="en" style="display:none;">Ethics</h2>
+            <p class="ru">Результат анализа – не абсолютный прогноз, а выявление закономерностей. Расценивайте сервис как советника, но принимайте решения самостоятельно.</p>
+            <p class="en" style="display:none;">The analysis result is not an absolute forecast, but a detection of patterns. Treat the service as an advisor, but make decisions independently.</p>
+        </div>
+    </section>
+
+    <section id="accuracy">
+        <div class="container">
+            <h2 class="ru">[Точность]</h2>
+            <h2 class="en" style="display:none;">[Accuracy]</h2>
         </div>
     </section>
 
@@ -177,18 +206,27 @@
         </div>
     </section>
 
+    <section id="guarantees">
+        <div class="container">
+            <h2 class="ru">Гарантии</h2>
+            <h2 class="en" style="display:none;">Guarantees</h2>
+            <p class="ru">Точность сервиса позволяет дать гарантию на возврат средств в случае несоответствия базовым параметрам личности. Поддержание репутации точной прогнозной аналитики - в интересах сервиса. Вы всегда можете уточнять отдельные моменты в прогнозе. Мы пойдем на встречу</p>
+            <p class="en" style="display:none;">The service's accuracy allows a money-back guarantee if it fails to match basic personality parameters. Maintaining a reputation for accurate forecasting analytics is in the service's interest. You can always clarify specific aspects of the forecast. We will meet you halfway</p>
+        </div>
+    </section>
+
     <section id="services">
         <div class="container">
             <h2 class="ru">Услуги</h2>
             <h2 class="en" style="display:none;">Services</h2>
+            <p class="ru">Подходит для анализа выбора, проектов, совместимости и профилей.</p>
+            <p class="en" style="display:none;">Suitable for analyzing choices, projects, compatibility, and profiles.</p>
             <ul class="services-list">
                 <li>
-                    <span class="ru">₽₽</span><span class="en" style="display:none;">$$</span><br>
-                    <span class="ru">≥5,000 ₽ | Быстрый анализ одной задачи с отчётом за 6 часов — 2 суток. Подходит для оперативных решений (выбор, проект, совместимость, профиль).</span>
-                    <span class="en" style="display:none;">≥$50 | Quick analysis of one task with a report in 6 hours to 2 days. Ideal for operational decisions (choice, project, compatibility, profile).</span>
                     <details>
-                        <summary><span class="ru">Доступные услуги</span><span class="en" style="display:none;">Available Services</span></summary>
+                        <summary><span class="ru">₽₽</span><span class="en" style="display:none;">$$</span></summary>
                         <div>
+                            <div><span class="ru">Быстрый анализ одной задачи с отчётом за 6 часов — 2 суток. Подходит для оперативных решений (выбор, проект, совместимость, профиль).</span><span class="en" style="display:none;">Quick analysis of one task with a report in 6 hours to 2 days. Ideal for operational decisions (choice, project, compatibility, profile).</span></div>
                             <details>
                                 <summary><span class="ru">Услуга 1</span><span class="en" style="display:none;">Service 1</span></summary>
                                 <div><span class="ru">Описание</span><span class="en" style="display:none;">Description</span></div>
@@ -213,12 +251,10 @@
                     </details>
                 </li>
                 <li>
-                    <span class="ru">₽₽₽</span><span class="en" style="display:none;">$$$</span><br>
-                    <span class="ru">≥15,000 ₽ | Углублённый анализ 2-3 задач с рекомендациями за 2-5 дней. Для взвешенных решений с точными выводами.</span>
-                    <span class="en" style="display:none;">≥$150 | In-depth analysis of 2-3 tasks with recommendations in 2-5 days. For informed decisions with precise insights.</span>
                     <details>
-                        <summary><span class="ru">Доступные услуги</span><span class="en" style="display:none;">Available Services</span></summary>
+                        <summary><span class="ru">₽₽₽</span><span class="en" style="display:none;">$$$</span></summary>
                         <div>
+                            <div><span class="ru">Углублённый анализ 2-3 задач с рекомендациями за 2-5 дней. Для взвешенных решений с точными выводами.</span><span class="en" style="display:none;">In-depth analysis of 2-3 tasks with recommendations in 2-5 days. For informed decisions with precise insights.</span></div>
                             <details>
                                 <summary><span class="ru">Услуга 1</span><span class="en" style="display:none;">Service 1</span></summary>
                                 <div><span class="ru">Описание</span><span class="en" style="display:none;">Description</span></div>
@@ -243,12 +279,10 @@
                     </details>
                 </li>
                 <li>
-                    <span class="ru">₽₽₽+</span><span class="en" style="display:none;">$$$+</span><br>
-                    <span class="ru">≥50,000 ₽+ | Полноценная сессия стратегического планирования с максимальной точностью. Гибкий подход для сложных задач и долгосрочных целей.</span>
-                    <span class="en" style="display:none;">≥$500+ | Comprehensive strategic planning session with maximum precision. Flexible approach for complex tasks and long-term goals.</span>
                     <details>
-                        <summary><span class="ru">Доступные услуги</span><span class="en" style="display:none;">Available Services</span></summary>
+                        <summary><span class="ru">₽₽₽+</span><span class="en" style="display:none;">$$$+</span></summary>
                         <div>
+                            <div><span class="ru">Полноценная сессия стратегического планирования с максимальной точностью. Гибкий подход для сложных задач и долгосрочных целей.</span><span class="en" style="display:none;">Comprehensive strategic planning session with maximum precision. Flexible approach for complex tasks and long-term goals.</span></div>
                             <details>
                                 <summary><span class="ru">Услуга 1</span><span class="en" style="display:none;">Service 1</span></summary>
                                 <div><span class="ru">Описание</span><span class="en" style="display:none;">Description</span></div>
@@ -286,25 +320,105 @@
             </details>
             <details>
                 <summary><span class="ru">Источник данных</span><span class="en" style="display:none;">Data source</span></summary>
-                <div><span class="ru">Редкие тексты-первоисточники. Извлеченная практическая часть.</span><span class="en" style="display:none;">Rare original texts. Extracted practical algorithms
-            </details>
-            <details>
-                <summary><span class="ru">Точность</span><span class="en" style="display:none;">Accuracy</span></summary>
-                <div><span class="ru">Машинный расчёт исключает ошибки человека. Точность зависит от ваших вводных.</span><span class="en" style="display:none;">Machine computation eliminates human error. Accuracy depends on your input.</span></div>
+                <div><span class="ru">Редкие тексты-первоисточники. Извлеченная практическая часть.</span><span class="en" style="display:none;">Rare original texts. Extracted practical algorithms</span></div>
+                <details>
+                    <summary><span class="ru">《滴天髓》Di Tian Sui</span><span class="en" style="display:none;">Di Tian Sui</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Анализ судьбы через Ба Цзы (четыре столпа).</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Analysis of fate through Ba Zi (four pillars).</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто. Это аналитика судьбы, а не гадание.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean. This is fate analysis, not divination.</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Углубленные интерпретации структуры карты и уникальных комбинаций, малоизвестные техники.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> In-depth interpretations of chart structures and unique combinations, with lesser-known techniques.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《子平真詮》Zi Ping Zhen Quan (Истинные разъяснения Цзы Пина)</span><span class="en" style="display:none;">Zi Ping Zhen Quan (True Explications of Zi Ping)</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Глубокий разбор Ба Цзы для понимания личности и жизненных тенденций.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Deep analysis of Ba Zi for understanding personality and life trends.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто. Самопознание через систему.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean. Self-awareness through a system.</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Глубочайший разбор структуры карт, принципы скрытых элементов и их влияния.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> Deepest analysis of chart structures, principles of hidden elements, and their influence.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《欽天四化紫微斗數全書》Qin Tian Si Hua Zi Wei Dou Shu Quan Shu</span><span class="en" style="display:none;">Qin Tian Si Hua Zi Wei Dou Shu Quan Shu</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Астрология Цзы Вэй Доу Шу для анализа жизненных периодов.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Zi Wei Dou Shu astrology for analyzing life periods.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто. Планирование на основе звёздных данных.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean. Planning based on stellar data.</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Предельно детализированные техники прогнозирования судьбы, включая расчет жизненных периодов.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> Extremely detailed fate forecasting techniques, including life period calculations.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《青囊奥语》Qing Nang Ao Yu</span><span class="en" style="display:none;">Qing Nang Ao Yu</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Фэн-Шуй для анализа пространства и времени.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Feng Shui for analyzing space and time.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Почти чисто (если убрать образы — ок).</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Nearly clean (if images are removed—OK).</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Глубочайший разбор влияния направлений и времени, важен для пространственной корреляции судьбы.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> Deepest analysis of direction and time influence, important for spatial fate correlation.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《黃帝宅經》Huangdi Zhai Jing (Канон жилищ императора Хуанди)</span><span class="en" style="display:none;">Huangdi Zhai Jing (Canon of Emperor Huangdi's Dwellings)</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Правила выбора жилья по Фэн-Шуй.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Rules for selecting housing via Feng Shui.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean.</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Алгоритмы выбора местоположения для максимального удачного потока энергий.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> Algorithms for selecting locations for maximum beneficial energy flow.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《奇門遁甲秘笈大全》Qi Men Dun Jia Mi Ji Da Quan</span><span class="en" style="display:none;">Qi Men Dun Jia Mi Ji Da Quan</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Стратегический анализ времени и пространства через Ци Мэнь.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Strategic analysis of time and space through Qi Men.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто (если брать только математику — ок).</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean (if only math is taken—OK).</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> Включает как боевые, так и жизненные стратегии, позволяет просчитывать развитие событий с высокой точностью.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> Includes both combat and life strategies, allowing event development calculation with high accuracy.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">《御定星曆考原》Yu Ding Xing Li Kao Yuan (Императорский анализ звездных календарей)</span><span class="en" style="display:none;">Yu Ding Xing Li Kao Yuan (Imperial Analysis of Stellar Calendars)</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Астрономия для синхронизации с циклами.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Astronomy for synchronization with cycles.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean.</span></div>
+                        <div><span class="label ru">Особенность:</span><span class="ru"> AI получит углубленные знания по китайской астрономии, что позволит точнее соотносить данные с реальными звездными позициями.</span><span class="label en" style="display:none;">Feature:</span><span class="en" style="display:none;"> AI will gain deep knowledge of Chinese astronomy, enabling more accurate correlation with real stellar positions.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">Zhou Jing Zhou (周靖周)</span><span class="en" style="display:none;">Zhou Jing Zhou</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Классический китайский текст по Ба Цзы, с акцентом на циклы стихий и редкие техники интерпретации судьбы.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> A classic Chinese text on Ba Zi, focusing on elemental cycles and rare fate interpretation techniques.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Почти чисто. Если фильтровать культурные образы, это чистый анализ — как и в других книгах по Ба Цзы.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Nearly clean. If cultural imagery is filtered, it’s pure analysis—like other Ba Zi books.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">Chinese Mathematical Astrology: Reaching Out to the Stars (Ho Peng Yoke)</span><span class="en" style="display:none;">Chinese Mathematical Astrology: Reaching Out to the Stars (Ho Peng Yoke)</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Глубокий разбор китайской математической астрологии — Ба Цзы, Ци Мэнь Дунь Цзя, влияние календаря и звёздных циклов.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Deep analysis of Chinese mathematical astrology—Ba Zi, Qi Men Dun Jia, calendar, and stellar cycle influences.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Почти чисто. Если брать только расчётную часть, мистики можно избежать. Это аналитика с небольшим культурным флёром.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Nearly clean. If only the calculative part is taken, mysticism can be avoided. This is analytics with a slight cultural flair.</span></div>
+                    </div>
+                </details>
+                <details>
+                    <summary><span class="ru">Императорская наука имени 《君王姓名學》</span><span class="en" style="display:none;">Imperial Name Science 《Jun Wang Xing Ming Xue》</span></summary>
+                    <div class="source-details">
+                        <div><span class="label ru">Суть:</span><span class="ru"> Подробный труд по ономастике и нумерологии. Включает анализ имён и номеров через 251 числовую систему и пятиэлементный подход для оценки энергетики личности.</span><span class="label en" style="display:none;">Essence:</span><span class="en" style="display:none;"> Detailed work on onomastics and numerology. Includes analysis of names and numbers through a 251-number system and a five-element approach to assess personality energy.</span></div>
+                        <div><span class="label ru">Вердикт:</span><span class="ru"> Чисто. Методика использует числовые расчёты (251 числа), пятиэлементный анализ и циклические соответствия, что делает её аналитической и подходящей для нашей системы.</span><span class="label en" style="display:none;">Verdict:</span><span class="en" style="display:none;"> Clean. The methodology uses numerical calculations (251 numbers), five-element analysis, and cyclical correspondences, making it analytical and suitable for our system.</span></div>
+                    </div>
+                </details>
             </details>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2 class="ru">Запрос</h2>
-            <h2 class="en" style="display:none;">Request</h2>
+            <h2 class="ru">Контакт</h2>
+            <h2 class="en" style="display:none;">Contact</h2>
             <p class="ru">Пишите в Telegram для консультации. Отчёт — приватная ссылка в Notion.</p>
             <p class="en" style="display:none;">Contact us on Telegram for a consultation. Report — private Notion link.</p>
             <a href="https://t.me/yourusername" class="telegram-btn" target="_blank">
                 <span class="ru">Связаться</span>
                 <span class="en" style="display:none;">Contact</span>
             </a>
+        </div>
+    </section>
+
+    <section id="bottom-note">
+        <div class="container">
+            <h2 class="ru">[это точно]</h2>
+            <h2 class="en" style="display:none;">[this is accurate]</h2>
         </div>
     </section>
 
